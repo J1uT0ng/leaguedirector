@@ -8,82 +8,50 @@ League Director是一款用于录制编辑英雄联盟录像的工具. **[Downlo
 
 ![Screenshot](resources/screenshot.png)
 
-## Features
+## 特点
 
-* Control replay playback and speed
-* First person camera controls
-* Attach camera to champion or minion
-* Toggle interface elements including HUD, health bars and notifications
-* Graphical Options
-  - Field of view
+* 可以控制录像回放和速度
+* 第一人称镜头控制
+* 镜头可以对焦英雄或者小兵
+* 切换界面元素，包括HUD，血条和界面通知
+* 图形选项
+  - 视角
   - Near and far clipping
   - Custom skyboxes
-  - Shadow direction
-  - Depth and height fog
-  - Depth of field
+  - 阴影方向
+  - 战争迷雾的深度和高度
+  - 景深
 * Sequencer
-  - Record and playback keyframed camera position + graphical options
-  - Timeline for viewing and editing keyframe values
-  - Undo / Redo
-  - Save and load pre saved sequences
+  - 记录和回放关键帧相机位置+图形选项
+  - 用于查看和编辑关键帧值的时间线
+  - 撤消/重做
+  - 保存和加载预先保存的序列
   - Adjustable keyframe blending
-* Video capture in webm or png format
-* Customizable key bindings
+* 可以捕获WebM或PNG格式
+* 自定义快捷键绑定
 
-## How To Use
+## 使用方法
 
-**Note: Windows Only**
+**注意: 仅支持Windows系统**
 
-1. **[Download League Director](https://github.com/riotgames/leaguedirector/releases/latest)** from the releases page and install.
-2. Start League Director and make sure the checkbox next to your install is checked.
-3. Start League of Legends and launch a replay. League Director will automatically connect.
-4. Open the options menu (ESC key) in game and ensure your Video Graphics settings are set to Very High. If you did need to change your Video Graphics settings, you'll need to restart the replay to enable the additional rendering features like the skybox.
-5. Select FPS Camera from the Camera Modes drop down in game.
-6. Using the numpad keys (4, 5, 6, 8) and the mouse you can free camera move around. Key bindings for free camera can also be changed inside the game options.
+1. **[下载League Director汉化版](https://github.com/J1uT0ng/leaguedirector/releases/latest)** 并安装。
+2. 启动League Director汉化版，并确保准备就绪界面下方的复选框已经勾选。
+3. 打开一个录像文件，League Director汉化版会自动连接到客户端。
+4. 在游戏界面中按下ESC打开菜单页面，保证视频图形质量设置为“极高”。如果需要修改的话，请重新启动League Director汉化版。
+5. 在游戏左下角的下拉列表中选择FPS Camera。
+6. 您可以通过使用数字键盘上的数字键（4、5、6、8）和鼠标自由移动相机。 游戏内设置选项也可以更改键盘绑定。
 
-## Tutorials
-Introduction | Walkthrough
+## 详解
+介绍 | 上手
 ------------ | -------------
-[![](http://img.youtube.com/vi/bzqydcrw89A/0.jpg)](https://www.youtube.com/watch?v=bzqydcrw89A "League Director Intro")|[![](http://img.youtube.com/vi/KuHLaDRReRU/0.jpg)](https://www.youtube.com/watch?v=KuHLaDRReRU "League Director Tutorial")
+[![介绍](resources/screenshot.png)](B站链接 "League Director汉化版介绍")|[![上手](resources/screenshot.png)](B站链接 "League Director 汉化版使用教程")
 
-## Frequently Asked Questions
-**How do I change the keybindings for camera movement?**
+**League Director汉化版连接不上我的录像？**
 
-The forward, back, left, right key bindings for the FPS camera are actually set in the game options screen. With a replay running, open the options screen (ESC) and then go into 'Hotkeys' and into the section 'First Person Camera'.
-
-**Why is the skybox black?**  
-**Why won't the skybox change?**
-
-League Director requires your game to be set to the highest graphics settings. With a replay running, open the options screen (ESC) and under the 'Video' section set the graphics options to 'Very High'. You must restart the replay after changing this setting in order for it to take effect.
-
-**League Director does not show my game install on the options screen?**  
-**League Director does not connect to my replay?**
-
-If league director fails to find and configure your game client correctly don't worry because you can do it manually. Simple open up an explorer window where to where your game is installed, then look inside the Config folder for a file called 'game.cfg'. Right click and open this file with notepad and under the section labeled '[General]' make sure there is a value set to the following.
-
+如果不能找到并配置你的客户端，不用担心，你可以手动配置。 首先打开游戏安装路径, 然后在game\config目录下找到'game.cfg'的文件，右键用记事本打开该文件，查找EnableReplayApi关键词，并将该值设置为1。如果找不到该关键词，请将下面这行代码添加到'[General]'部分中。重新打开League Director汉化版，将会生效。
 ```
 EnableReplayApi=1
 ```
-
-If the option is already listed make sure it is set to 1. If the option is not listed at all just add it to the bottom of the list. You will need to restart the replay after changing this value for it to take effect.
-
-## Developing
-To run the source version of this application you need the [latest 3.7.2 version](https://www.python.org/downloads/release/python-372/)  of Python installed. From the windows command line:
-
-```
-# Clone this repository
-$ git clone https://github.com/riotgames/leaguedirector.git
-
-# Change directory
-$ cd leaguedirector
-
-# Run the startup script
-$ run.bat
-```
-
-The run batch file will setup a virtual environment using [Pipenv](https://pipenv.readthedocs.io/en/latest/) and install required dependencies such as [Qt](https://www.qt.io/qt-for-python).
-
-_League Director is being release by Riot Games as a reference implementation for the [Replay API](https://developer.riotgames.com/replay-apis.html). You are free to download and modify this source code or create your own fork of the project but we will not be accepting pull requests at this time._
 
 ## License
 Apache 2 (see [LICENSE](https://github.com/riotgames/leaguedirector/blob/master/LICENSE) for details)
@@ -94,6 +62,5 @@ For usage rights of Riot Games intellectual property, such as the skybox texture
 
 This project makes used of LGPL licensed software [QT for Python](https://doc.qt.io/qtforpython/licenses.html).
 
-## Special Thanks
- * Skin Spotlights
- * League of Editing
+## 特别感谢
+ * RiotGames leaguedirector
