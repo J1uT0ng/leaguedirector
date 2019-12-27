@@ -4,7 +4,8 @@
 [![Qt](https://img.shields.io/badge/pyside2-5.12.0-brightgreen.svg)](https://www.qt.io/qt-for-python)
 [![Chat](https://img.shields.io/badge/chat-on%20QQ-brightgreen.svg)]()
 
-League Director是一款用于录制编辑英雄联盟录像的工具. **[下载最新版](https://github.com/J1uT0ng/leaguedirector/releases/latest)**
+[League Director](https://github.com/RiotGames/leaguedirector)是一款用于录制编辑英雄联盟录像的工具，League Director汉化版是基于[League Director](https://github.com/RiotGames/leaguedirector)的汉化版本。  
+**[点击下载最新版](https://github.com/J1uT0ng/leaguedirector/releases/latest)**
 
 ![Screenshot](resources/screenshot.png)
 
@@ -54,4 +55,4 @@ EnableReplayApi=1
 ```
 
 ## 特别感谢
- * RiotGames leaguedirector
+ * [RiotGames leaguedirector](https://github.com/RiotGames/leaguedirector)
