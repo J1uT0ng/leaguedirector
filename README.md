@@ -48,19 +48,10 @@ League Director是一款用于录制编辑英雄联盟录像的工具. **[Downlo
 
 **League Director汉化版连接不上我的录像？**
 
-如果不能找到并配置你的客户端，不用担心，你可以手动配置。 首先打开游戏安装路径, 然后在game\config目录下找到'game.cfg'的文件，右键用记事本打开该文件，查找EnableReplayApi关键词，并将该值设置为1。如果找不到该关键词，请将下面这行代码添加到'[General]'部分中。重新打开League Director汉化版，将会生效。
+如果不能找到并配置你的客户端，不用担心，你可以手动配置。 首先打开游戏安装路径, 然后在game\config目录下找到“game.cfg”的文件，右键用记事本打开该文件，复制查找关键词EnableReplayApi，并将该值设置为1。如果找不到该关键词，请将下面这行代码添加到'[General]'部分中。重新打开League Director汉化版，将会生效。
 ```
 EnableReplayApi=1
 ```
-
-## License
-Apache 2 (see [LICENSE](https://github.com/riotgames/leaguedirector/blob/master/LICENSE) for details)
-
-For usage rights of Riot Games intellectual property, such as the skybox textures bundled with this installer, please refer to:
-
-[https://www.riotgames.com/en/legal](https://www.riotgames.com/en/legal)
-
-This project makes used of LGPL licensed software [QT for Python](https://doc.qt.io/qtforpython/licenses.html).
 
 ## 特别感谢
  * RiotGames leaguedirector
