@@ -47,6 +47,7 @@
 ------------ | -------------
 [![介绍](resources/screenshot.png)](B站链接 "League Director汉化版介绍")|[![上手](resources/screenshot.png)](B站链接 "League Director 汉化版使用教程")
 
+## 常见问题&解答
 **League Director汉化版连接不上我的录像？**
 
 如果League Director汉化版找不到并正确配置你的客户端，不用担心，你可以手动配置。 首先打开游戏安装路径, 然后在**game\config**目录下找到**game.cf**文件，右键用记事本打开该文件，复制查找关键词**EnableReplayApi**，并将该值设置为：**1**。如果找不到该关键词，请将下面这行代码添加到[General]部分中。重新打开League Director汉化版，将会生效。
