@@ -45,7 +45,7 @@
 ## 详解
 介绍 | 上手
 ------------ | -------------
-[![介绍](resources/screenshot.png)](B站链接 "League Director汉化版介绍")|[![上手](resources/screenshot.png)](B站链接 "League Director 汉化版使用教程")
+[![点击查看介绍视频](resources/screenshot.png)](B站链接 "League Director汉化版介绍")|[![点击查看教程视频](resources/screenshot.png)](B站链接 "League Director 汉化版使用教程")
 
 ## 常见问题&解答
 **League Director汉化版连接不上我的录像？**
