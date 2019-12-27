@@ -1,10 +1,10 @@
-## League Director
+## League Director汉化版
 [![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://github.com/riotgames/leaguedirector/blob/master/LICENSE)
 [![Python](https://img.shields.io/badge/python-3.7-brightgreen.svg)](https://www.python.org/downloads/release/python-372/)
 [![Qt](https://img.shields.io/badge/pyside2-5.12.0-brightgreen.svg)](https://www.qt.io/qt-for-python)
-[![Chat](https://img.shields.io/badge/chat-on%20discord-lightgrey.svg)](https://discord.gg/7j5fdRp)
+[![Chat](https://img.shields.io/badge/chat-on%20QQ-brightgreen.svg)]()
 
-League Director is a tool for staging and recording videos from League of Legends replays. **[Download Latest Release](https://github.com/riotgames/leaguedirector/releases/latest)**
+League Director是一款用于录制编辑英雄联盟录像的工具. **[Download Latest Release](https://github.com/J1uT0ng/leaguedirector/releases/latest)**
 
 ![Screenshot](resources/screenshot.png)
 
